@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/arangodb_demo/arangodb_demo.iml" filepath="$PROJECT_DIR$/arangodb_demo/arangodb_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arangodb_spark_demo/arangodb_spark_demo.iml" filepath="$PROJECT_DIR$/arangodb_spark_demo/arangodb_spark_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sparkExample.iml" filepath="$PROJECT_DIR$/sparkExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark_demo/spark_demo.iml" filepath="$PROJECT_DIR$/spark_demo/spark_demo.iml" />
+    </modules>
+  </component>
+</project>

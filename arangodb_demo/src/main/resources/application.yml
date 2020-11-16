@@ -1,0 +1,27 @@
+arangodb: 
+  hosts: 10.200.1.183:8529
+  user: root
+  password: root
+  database: _system
+server:
+  port: 8080
+
+spring:
+  application:
+    name: arangoDB_demo
+  data:  # arangodb配置
+    arangodb:
+      hosts: ${arangodb.hosts}
+      user: ${arangodb.user}
+      database: ${arangodb.database}
+      password: ${arangodb.password}
+      protocol: HTTP_JSON  #默认VST VST,HTTP_JSON,HTTP_VPACK
+      #内置连接池将为每个主机打开的最大连接数
+      #该参数不宜配置过大, 否则会引起占用过多tcp连接数，从而报SocketException: Too many open files的错误, 默认配置为1
+      maxConnections: 1000 #最大连接  默认1
+      connectionTtl: 10000
+      timeout: 500000 #超时
+      loadBalancingStrategy: NONE #负载平衡策略 默认NONE   NONE, ROUND_ROBIN, ONE_RANDOM
+      acquireHostList: false #获取主机列表   默认false
+      useSsl: false #使用ssl  默认false
+

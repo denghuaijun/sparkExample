@@ -1,0 +1,12 @@
+#spark配置
+spark: 
+  master: spark://10.200.1.193:7077 #spark://10.200.1.193:7077    local
+  appName: SparkTest
+  executor.memory: 4g
+  scheduler.mode: FAIR
+  cores.max: 6
+  deploy.defaultCores: 2
+  logLevel: WARN
+#配置日志
+logging: 
+  config: classpath:logback-boot.xml #引入日志配置文件
